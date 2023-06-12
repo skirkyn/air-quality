@@ -1,0 +1,98 @@
+[
+  {
+    "DateIssue": "2023-06-05 ",
+    "DateForecast": "2023-06-05 ",
+    "ReportingArea": "St. Petersburg",
+    "StateCode": "FL",
+    "Latitude": 27.791,
+    "Longitude": -82.74,
+    "ParameterName": "O3",
+    "AQI": -1,
+    "Category": {
+      "Number": 1,
+      "Name": "Good"
+    },
+    "ActionDay": false,
+    "Discussion": ""
+  },
+  {
+    "DateIssue": "2023-06-05 ",
+    "DateForecast": "2023-06-05 ",
+    "ReportingArea": "St. Petersburg",
+    "StateCode": "FL",
+    "Latitude": 27.791,
+    "Longitude": -82.74,
+    "ParameterName": "PM2.5",
+    "AQI": -1,
+    "Category": {
+      "Number": 1,
+      "Name": "Good"
+    },
+    "ActionDay": false,
+    "Discussion": ""
+  },
+  {
+    "DateIssue": "2023-06-05 ",
+    "DateForecast": "2023-06-06 ",
+    "ReportingArea": "St. Petersburg",
+    "StateCode": "FL",
+    "Latitude": 27.791,
+    "Longitude": -82.74,
+    "ParameterName": "O3",
+    "AQI": -1,
+    "Category": {
+      "Number": 1,
+      "Name": "Good"
+    },
+    "ActionDay": false,
+    "Discussion": ""
+  },
+  {
+    "DateIssue": "2023-06-05 ",
+    "DateForecast": "2023-06-06 ",
+    "ReportingArea": "St. Petersburg",
+    "StateCode": "FL",
+    "Latitude": 27.791,
+    "Longitude": -82.74,
+    "ParameterName": "PM2.5",
+    "AQI": -1,
+    "Category": {
+      "Number": 1,
+      "Name": "Good"
+    },
+    "ActionDay": false,
+    "Discussion": ""
+  },
+  {
+    "DateIssue": "2023-06-05 ",
+    "DateForecast": "2023-06-07 ",
+    "ReportingArea": "St. Petersburg",
+    "StateCode": "FL",
+    "Latitude": 27.791,
+    "Longitude": -82.74,
+    "ParameterName": "O3",
+    "AQI": -1,
+    "Category": {
+      "Number": 1,
+      "Name": "Good"
+    },
+    "ActionDay": false,
+    "Discussion": ""
+  },
+  {
+    "DateIssue": "2023-06-05 ",
+    "DateForecast": "2023-06-07 ",
+    "ReportingArea": "St. Petersburg",
+    "StateCode": "FL",
+    "Latitude": 27.791,
+    "Longitude": -82.74,
+    "ParameterName": "PM2.5",
+    "AQI": -1,
+    "Category": {
+      "Number": 1,
+      "Name": "Good"
+    },
+    "ActionDay": false,
+    "Discussion": ""
+  }
+]
