@@ -7,8 +7,7 @@ from aws_cdk import (
 )
 from constructs import Construct
 
-from config import eks_config
-from config import vpc_config
+from config import eks_config, vpc_config
 
 
 class EKSStack(Stack):
@@ -24,7 +23,7 @@ class EKSStack(Stack):
 
         db_cluster.grant_data_api_access(self.role)
 
-        self.cluster = eks.Cluster.from_cluster_attributes(self, eks_config.cluster_id,
+        self.cluster = eks.Cluster(self, eks_config.cluster_id,
                                                            cluster_name=eks_config.cluster_name,
                                                            version=eks.KubernetesVersion.V1_26,
                                                            vpc=vpc,

@@ -71,8 +71,11 @@ class lambda_config:
     locations_name = os.getenv('lambda_locations_name') # locations
     alerts_name = os.getenv('lambda_alerts_name')  # alerts
     authorizewr_name = os.getenv('lambda_authorizer_name') #'aq_authorizer'
-    lib_layer = os.getenv('lambda_lib_lzayer_name') # lib
-    alerts_layer = os.getenv('lambda_alerts_lzayer_name') # alerts
-    locations_layer = os.getenv('lambda_locations_lzayer_name') # locations
+    lib_layer = os.getenv('lambda_lib_layer_name') # lib
+    alerts_layer = os.getenv('lambda_alerts_layer_name') # alerts
+    locations_layer = os.getenv('lambda_locations_layer_name') # locations
     locations_integration_name = os.getenv('lambda_locations_int_name') #locations_integration
     alerts_integration_name = os.getenv('lambda_alerts_int_name')  # alerts_integration
+    alerts_queue = os.getenv('lambda_alerts_queue')
+    locations_queue = os.getenv('lambda_locations_queue')
+

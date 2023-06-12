@@ -5,9 +5,7 @@ from aws_cdk import (
 )
 from constructs import Construct
 
-from config import bastion_config
-from config import eks_config
-from config import vpc_config
+from config import bastion_config, eks_config, vpc_config
 
 
 class BastionStack(Stack):

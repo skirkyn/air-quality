@@ -5,8 +5,7 @@ from aws_cdk import (
 )
 from constructs import Construct
 
-from config import db_config
-from config import vpc_config
+from config import db_config, vpc_config
 
 
 class DBStack(Stack):

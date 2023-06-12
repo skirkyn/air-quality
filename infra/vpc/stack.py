@@ -11,7 +11,6 @@ class VPCStack(Stack):
 
     def __init__(self, scope: Construct, construct_id: str, **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
-        print(vpc_config.public_subnet_name)
         self.vpc = ec2.Vpc(
             self, vpc_config.name, cidr=vpc_config.cidr, nat_gateways=0, subnet_configuration=[
                 ec2.SubnetConfiguration(
