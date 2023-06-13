@@ -9,6 +9,7 @@ from aws_cdk import (
     aws_cognito as cognito,
     aws_lambda as lmbd,
     aws_sqs as sqs,
+    aws_rds as rds,
     aws_lambda_python_alpha as lmbd_python, Duration,
 )
 from constructs import Construct
@@ -19,7 +20,7 @@ from config import lambda_config
 class LambdaStack(Stack):
 
     def __init__(self, scope: Construct, construct_id: str, user_pool: cognito.UserPool,
-                 user_pool_client: cognito.UserPoolClient, **kwargs) -> None:
+                 user_pool_client: cognito.UserPoolClient, db_cluster: rds.ServerlessCluster, **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
 
         curr_dir = os.path.dirname(os.path.abspath(__file__))
@@ -43,6 +44,7 @@ class LambdaStack(Stack):
                                                                                                    base_functions,
                                                                                                    lambda_config.locations_name),
                                                                                                )])
+        db_cluster.grant_data_api_access(locations_function)
         locations_queue = sqs.Queue(self, lambda_config.locations_queue)
         locations_queue.grant_send_messages(locations_function)
 
@@ -59,6 +61,8 @@ class LambdaStack(Stack):
                                                                                                 base_functions,
                                                                                                 lambda_config.alerts_name),
                                                                                             )])
+
+        db_cluster.grant_data_api_access(alerts_function)
         alerts_queue = sqs.Queue(self, lambda_config.alerts_queue)
         alerts_queue.grant_send_messages(alerts_function)
 

@@ -1,7 +1,9 @@
-from common import say_hello
+import os
+
+from base_function import handle_request
+
+queue_url = os.getenv('locations_queue_url')
+
 
 def handler(event, context):
-    return {
-        'statusCode': 200,
-        'result':  say_hello() + ' locations'
-    }
+    return handle_request(event, queue_url)
